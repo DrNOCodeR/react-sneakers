@@ -1,0 +1,26 @@
+.empty_state {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--neutral-800);
+
+  & p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-height: 405px) {
+  .empty_state {
+    justify-content: flex-start;
+
+    & svg {
+      flex-shrink: 0;
+    }
+  }
+}

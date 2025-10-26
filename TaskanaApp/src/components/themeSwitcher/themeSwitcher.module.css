@@ -1,0 +1,69 @@
+.wrap {
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  background-color: var(--base-800);
+  display: flex;
+  gap: 0.25rem;
+  position: relative;
+  cursor: pointer;
+
+  & div {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &:before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-400);
+    border-radius: 0.25rem;
+    box-shadow: var(--shadows-dark-base-default);
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      left 0.2s ease;
+  }
+
+  &:hover:before,
+  &:focus:before {
+    background-color: var(--base-white);
+  }
+
+  &.dark:before {
+    left: calc(100% - 2rem - 0.25rem);
+  }
+
+  &.dark div:nth-child(2),
+  &.light div:nth-child(1) {
+    color: var(--base-white);
+  }
+
+  &.dark div:nth-child(1),
+  &.light div:nth-child(2) {
+    color: var(--base-600);
+  }
+
+  &.dark:hover div:nth-child(2),
+  &.dark:focus div:nth-child(2),
+  &.light:hover div:nth-child(1),
+  &.light:focus div:nth-child(1) {
+    color: var(--base-900);
+  }
+
+  &.light:before {
+    left: 0.25rem;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--base-white);
+    outline-offset: 2px;
+  }
+}

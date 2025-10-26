@@ -1,0 +1,12 @@
+@import url(./fonts.css);
+@import url(./normalize.css);
+@import url(./variables.css);
+
+* {
+  font-family: 'Source Sans 3', sans-serif;
+  transition: background-color 0.2s ease,
+    color 0.2s ease,
+    border-left 0.2s ease,
+    border-right 0.2s ease,
+    fill 0.2s ease;
+}

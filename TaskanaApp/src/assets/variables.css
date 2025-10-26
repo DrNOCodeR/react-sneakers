@@ -1,0 +1,49 @@
+:root {
+  --neutral-0: rgba(255, 255, 255, 1);
+  --neutral-100: rgba(251, 251, 251, 1);
+  --neutral-200: rgba(243, 243, 243, 1);
+  --neutral-300: rgba(236, 236, 236, 1);
+  --neutral-400: rgba(191, 191, 191, 1);
+  --neutral-500: rgba(140, 140, 140, 1);
+  --neutral-600: rgba(108, 108, 108, 1);
+  --neutral-700: rgba(57, 57, 57, 1);
+  --neutral-800: rgba(28, 28, 28, 1);
+  --neutral-900: rgba(20, 20, 20, 1);
+
+  --base-black: rgba(0, 0, 0, 1);
+  --base-white: rgba(255, 255, 255, 100%);
+  --base-600: rgba(108, 108, 108, 100%);
+  --base-800: rgba(38, 38, 38, 100%);
+  --base-900: rgba(20, 20, 20, 100%);
+
+  --primary-0: rgba(254, 244, 244, 1);
+  --primary-100: rgba(255, 206, 206, 1);
+  --primary-200: rgba(252, 169, 169, 1);
+  --primary-300: rgba(242, 89, 89, 1);
+  --primary-400: rgba(213, 16, 16, 1);
+  --primary-500: rgba(166, 12, 12, 1);
+  --primary-600: rgba(118, 9, 9, 1);
+
+  --shadows-base-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  --shadows-base-hover: 2px 8px 12px 0 rgb(0, 0, 0, 0.25);
+  --shadows-sm-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --shadows-sm-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] {
+  --neutral-0: rgba(20, 20, 20, 100%);
+  --neutral-100: rgba(28, 28, 28, 100%);
+  --neutral-200: rgba(38, 38, 38, 100%);
+  --neutral-300: rgba(51, 51, 51, 100%);
+  --neutral-400: rgba(108, 108, 108, 100%);
+  --neutral-500: rgba(140, 140, 140, 100%);
+  --neutral-600: rgba(191, 191, 191, 100%);
+  --neutral-700: rgba(236, 236, 236, 100%);
+  --neutral-800: rgba(251, 251, 251, 100%);
+  --neutral-900: rgba(255, 255, 255, 100%);
+
+  --shadows-base-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  --shadows-base-hover: 2px 8px 12px 0 rgb(0, 0, 0, 0.8);
+  --shadows-sm-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  --shadows-sm-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.6);
+}

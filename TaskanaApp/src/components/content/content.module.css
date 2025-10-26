@@ -1,0 +1,13 @@
+.content {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+.wrap {
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--neutral-0);
+}

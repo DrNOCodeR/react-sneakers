@@ -1,0 +1,26 @@
+.footer {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  color: var(--neutral-600);
+  background: var(--neutral-0);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+
+  & a {
+    color: inherit;
+    text-decoration: underline;
+    border-radius: 4px;
+    display: inline-block;
+
+    &:hover, &:focus{
+      color: var(--neutral-800);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--neutral-800);
+      outline-offset: 2px;
+    }
+  }
+}
